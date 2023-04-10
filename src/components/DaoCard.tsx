@@ -1,7 +1,7 @@
-import React, { FormEvent, useReducer, useRef, useState } from "react";
+import React, { useState } from "react";
 import { Card, Skeleton } from "@components/common";
 import { useFetchDao } from "@daobox/use-aragon";
-import { Flex, Metric, Text, Button, Icon, TextInput } from "@tremor/react";
+import { Flex, Metric, Text, Button } from "@tremor/react";
 import { ipfsUriToUrl } from "@utils/strings";
 import { daoAddress } from "../constants";
 import { Avatar } from "flowbite-react";
