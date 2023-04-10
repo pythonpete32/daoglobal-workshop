@@ -20,7 +20,7 @@ export function formatToken(number: number | bigint, decimals: number = 18, symb
 }
 
 export function tokenValueFormatter(decimals: number) {
-  return function (weiValue: ethers.BigNumberish, precision = decimals) {
+  return function (weiValue: ethers.BigNumberish, precision = 2) {
     const value = ethers.utils.formatUnits(weiValue, decimals);
     const fixedValue = parseFloat(value).toFixed(precision);
     return fixedValue.toString();
