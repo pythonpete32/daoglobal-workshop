@@ -1,5 +1,8 @@
 import { ethers } from "ethers";
 
+export const DAYS_1 = new Date(new Date().getTime() + 1000 * 60 * 60 * 24 + 1);
+export const DAYS_3 = new Date(new Date().getTime() + 3 * 24 * 60 * 60 * 1000);
+
 export function calcPercentage(part: number | bigint, total: number | bigint, precision = 2) {
   return parseFloat(((Number(part) / Number(total)) * 100).toFixed(precision));
 }
